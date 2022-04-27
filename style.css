@@ -1,0 +1,103 @@
+body {
+  height: 100%;
+  width: 100%;
+  /* background-color: #DFD5BE; */
+  font-family: helvetica;
+  margin: 0;
+}
+
+#header {
+  margin: auto;
+  text-align: center;
+  font-size: 3.5em;
+  font-weight: 700;
+  cursor: pointer;
+  color: #3a404a;
+  text-shadow: 0 0 1px black;
+}
+
+.buttonDiv {
+  text-align: center;
+  display: block;
+  width: 90%;
+  margin: auto;
+  font-size: 2em;
+  margin-top: 1em;
+  font-weight: 100;
+  color: lightgray;
+  text-shadow: 0 0 1px black;
+}
+
+.divButton:hover {
+  font-weight: bolder;
+}
+
+#divButton1 {
+  display: inline-block;
+  cursor: pointer;
+  width: 24%;
+}
+
+#divButton2 {
+  display: inline-block;
+  cursor: pointer;
+  width: 24%;
+}
+
+#divButton3 {
+  display: inline-block;
+  cursor: pointer;
+  width: 24%;
+}
+
+#linksButton {
+  display: inline-block;
+  cursor: pointer;
+  width: 24%;
+}
+
+#ulNav {
+  display: inline-block;
+  text-align: right;
+  padding-left: 0;
+  margin-top: -.225em;
+  width: 26.5%;
+  float: right;
+}
+
+.links {
+  display: none;
+  list-style: none;
+  text-align: center;
+  z-index: 1;
+}
+
+#aLinks {
+  text-decoration: none;
+  color: black;
+}
+#header:hover {
+  text-decoration: underline;
+}
+a:hover {
+  font-weight: bolder;
+}
+.bioContainer {
+  width: 75%;
+  margin: auto;
+  text-align: left;
+  color: #3a404a;
+}
+h2:hover {
+  text-decoration: underline;
+}
+.personalDiv {
+  display: none;
+}
+.additionalDiv {
+  display: none;
+}
+.resumeContainer {
+  width: 75%;
+  margin: auto;
+}
