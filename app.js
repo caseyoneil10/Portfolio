@@ -16,52 +16,55 @@ const navigateHeader = () => {
 //These animate our buttons in the header
 //The stop function prevents the aninmation from triggering multiple times.
 const animateBio = () => {
-  $('#divButton1').stop().animate({
-    fontSize: "2.5em"
+  $('.button1').stop().animate({
+    fontSize: "2em"
   })
 }
 
 const unanimateBio = () => {
-  $('#divButton1').stop().animate({
+  $('.button1').stop().animate({
     fontSize: "1em"
   })
 }
 const animateResume = () => {
-  $('#divButton2').stop().animate({
-    fontSize: "2.5em"
+  $('.button2').stop().animate({
+    fontSize: "2em"
   })
 }
 
 const unanimateResume = () => {
-  $('#divButton2').stop().animate({
+  $('.button2').stop().animate({
     fontSize: "1em"
   })
 }
 const animateProjects = () => {
-  $('#divButton3').stop().animate({
-    fontSize: "2.5em"
+  $('.button3').stop().animate({
+    fontSize: "2em"
   })
 }
 
 const unanimateProjects = () => {
-  $('#divButton3').stop().animate({
+  $('.button3').stop().animate({
     fontSize: "1em"
   })
 }
 const animateLinks = () => {
-  $('#linksButton').stop().animate({
-    fontSize: "2.5em"
+  $('.button4').stop().animate({
+    fontSize: "2em"
   })
 }
 
 const unanimateLinks = () => {
-  $('#linksButton').stop().animate({
+  $('.button4').stop().animate({
     fontSize: "1em"
   })
 }
 //this toggles the display setting for class of links. each click toggles it from block to none. This is used for the drop down menu in the header.
 const expandLinks = () => {
-  $('.links').slideToggle()
+  $('.ulFlex').slideToggle()
+}
+const expandLinks2 = () => {
+  $('.projButton').slideToggle()
 }
 
 //These links toggle between showing the
@@ -120,25 +123,27 @@ const hideModal4 = () => {
 $(() => {
 
   //on click execute listed function (which takes you to different HTML files)
-  $('#divButton1').click(navigateBio);
-  $('#divButton2').click(navigateResume);
-  $('#divButton3').click(navigateProjects);
+  $('.button1').click(navigateBio);
+  $('.button2').click(navigateResume);
+  $('.button3').click(navigateProjects);
   $('#header').click(navigateHeader)
 
-  $('#linksButton').click(expandLinks)
+  $('.button4').click(expandLinks)
+  $('.button3').click(expandLinks2)
+
   //upon mouse enter into the object execute the function.
-  $('#divButton1').mouseenter(animateBio)
+  $('.button1').mouseenter(animateBio)
   //upon mouse leave from the object execute the function.
-  $('#divButton1').mouseleave(unanimateBio)
+  $('.button1').mouseleave(unanimateBio)
 
-  $('#divButton2').mouseenter(animateResume)
-  $('#divButton2').mouseleave(unanimateResume)
+  $('.button2').mouseenter(animateResume)
+  $('.button2').mouseleave(unanimateResume)
 
-  $('#divButton3').mouseenter(animateProjects)
-  $('#divButton3').mouseleave(unanimateProjects)
+  $('.button3').mouseenter(animateProjects)
+  $('.button3').mouseleave(unanimateProjects)
 
-  $('#linksButton').mouseenter(animateLinks)
-  $('#linksButton').mouseleave(unanimateLinks)
+  $('.button4').mouseenter(animateLinks)
+  $('.button4').mouseleave(unanimateLinks)
 
   $('#careerID').click(expandCareer)
   $('#personalID').click(expandPersonal)

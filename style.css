@@ -28,16 +28,84 @@ body {
   letter-spacing: .1em;
 }
 
-.buttonDiv {
-  text-align: center;
-  display: block;
+.buttonContainer {
+  display: flex;
   width: 90%;
+  justify-content: center;
   margin: auto;
+
+}
+
+.buttonBar {
+  display: flex;
+  width: 85%;
+  margin: auto;
+  justify-content: center;
+  color: #CFCBC8;
   font-size: 2em;
   margin-top: 1em;
+  text-align: center;
   font-weight: 100;
-  color: #CFCBC8;
   text-shadow: 0 0 1px black;
+
+
+}
+
+
+.button1 {
+  display: flex;
+
+  width: 24%;
+  text-align: center;
+  flex-direction: column;
+
+}
+.button2 {
+  display: flex;
+  width: 24%;
+  flex-direction: column;
+
+
+}
+.button3 {
+  display: flex;
+  width: 24%;
+  flex-direction: column;
+
+
+}
+.button4 {
+  display: flex;
+  width: 24%;
+  flex-direction: column;
+}
+
+.ulFlex {
+  display: none;
+  color: black;
+  position: relative;
+  margin-top: -.4em;
+}
+
+.ulFlexLink {
+  font-size: .5em;
+  text-decoration: none;
+  color: black;
+}
+.projButton{
+  display: none;
+  color: black;
+  position: relative;
+  margin-top: -.4em;
+}
+
+.ulFlexLink2 {
+  font-size: .5em;
+  text-decoration: none;
+  color: black;
+}
+
+.pleaseWork {
 }
 
 .divButton:hover {
@@ -75,7 +143,7 @@ body {
   margin-top: -.15em;
   width: 26.5%;
   float: right;
-  z-index: 0;
+
 }
 
 .links {
@@ -90,7 +158,7 @@ body {
 }
 
 #header:hover {
-  text-decoration: underline;
+text-decoration: underline;
 }
 
 a:hover {
@@ -110,7 +178,14 @@ a:hover {
   text-align: left;
   color: #3a404a;
 }
+#careerID {
+  margin-bottom: 1em;
 
+}
+#personalID {
+  margin-bottom: 1em;
+
+}
 .careerDiv {
   display: none;
 }
@@ -338,6 +413,6 @@ hr {
   height: 1px;
   border: 0;
   border-top: 5px solid #3a404a;
-  margin-top: 6.35em;
+  margin-top: 2.35em;
   width: 75%;
 }
