@@ -1,11 +1,11 @@
 body {
-  height: 100%;
-  width: 100%;
-  /* background-color: #DFD5BE; */
+  /* height: 100%;
+  width: 100%; */
+  background-color: #FFFBF7;
   font-family: helvetica;
-  margin: 0;
 }
 
+/* header styling same on each page */
 #header {
   margin: auto;
   text-align: center;
@@ -14,6 +14,18 @@ body {
   cursor: pointer;
   color: #3a404a;
   text-shadow: 0 0 1px black;
+  letter-spacing: .2em;
+}
+
+#header2 {
+  margin: auto;
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 700;
+  cursor: pointer;
+  color: #3a404a;
+  text-shadow: 0 0 1px black;
+  letter-spacing: .1em;
 }
 
 .buttonDiv {
@@ -24,7 +36,7 @@ body {
   font-size: 2em;
   margin-top: 1em;
   font-weight: 100;
-  color: lightgray;
+  color: #CFCBC8;
   text-shadow: 0 0 1px black;
 }
 
@@ -57,47 +69,275 @@ body {
 }
 
 #ulNav {
-  display: inline-block;
+  display: block;
   text-align: right;
   padding-left: 0;
-  margin-top: -.225em;
+  margin-top: -.15em;
   width: 26.5%;
   float: right;
+  z-index: 0;
 }
 
 .links {
   display: none;
   list-style: none;
   text-align: center;
-  z-index: 1;
 }
 
 #aLinks {
   text-decoration: none;
   color: black;
 }
+
 #header:hover {
   text-decoration: underline;
 }
+
 a:hover {
   font-weight: bolder;
 }
+
+.hover:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* styling for bio page */
 .bioContainer {
   width: 75%;
   margin: auto;
+  margin-top: 5em;
   text-align: left;
   color: #3a404a;
 }
-h2:hover {
-  text-decoration: underline;
+
+.careerDiv {
+  display: none;
 }
+
 .personalDiv {
   display: none;
 }
+
 .additionalDiv {
   display: none;
 }
+
+/* styling for resume page */
+.skillsContainer {
+  width: 75%;
+  margin: auto;
+  margin-top: 5em;
+  text-align: left;
+  color: #3a404a;
+}
+
+.skillsDiv {
+  display: none;
+  margin-bottom: 2em;
+  letter-spacing: .05em;
+}
+
+.workExpDiv {
+  display: none;
+  letter-spacing: .05em;
+
+}
+
+.educationDiv {
+  display: none;
+  letter-spacing: .05em;
+
+}
+
+#skillsID {
+  width: 5%;
+}
+
+#workID {
+  width: 24%;
+}
+
+#educationID {
+  width: 15%;
+}
+
 .resumeContainer {
   width: 75%;
   margin: auto;
+  margin-top: 5em;
+  text-align: left;
+  color: #3a404a;
+}
+
+.pdf {
+  display: block;
+}
+
+#pdfID {
+  text-decoration: none;
+  color: #CFCBC8;
+}
+
+#pdfID:hover {
+  text-decoration: underline;
+}
+
+/* welcome page styling */
+.welcomePageContainer {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  margin-top: 4em;
+  margin-bottom: 10em;
+  justify-content: center;
+}
+
+.welcomeInnerContainer {
+  display: flex;
+}
+
+.welcomeText {
+  display: flex;
+  font-size: 1.1em;
+  color: #3a404a;
+  padding: .5em;
+  letter-spacing: .05em;
+  justify-content: center;
+}
+
+.welcomeTextId {
+  text-align: center;
+  letter-spacing: .1em;
+  color: #3a404a;
+}
+
+.welcomeTextFlex {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+}
+
+.imgContainer {
+  display: flex;
+  width: auto;
+}
+
+.picture {
+  display: flex;
+  margin-right: 1em;
+  border-radius: 8px;
+  max-width: 15em;
+  height: auto;
+}
+
+/* styling for projects page */
+.projectOutterContainer {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.projectInnerContainer {
+  display: flex;
+  width: 90%;
+  letter-spacing: .1em;
+  /* flex-wrap: wrap; */
+}
+
+.projects {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.projectModalContainer {
+  position: relative;
+  margin: auto;
+  width: 65%;
+  margin-top: 10em;
+}
+
+.modal1 {
+  display: none;
+  background-color: rgba(1, 1, 1, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  overflow: auto;
+}
+
+.modal1Text {
+  display: none;
+  background-color: #FFFBF7;
+  color: #3a404a;
+  position: absolute;
+  border: 2px solid lightgray;
+  margin-top: 5em;
+  padding: .5em;
+  border-radius: 5px;
+  letter-spacing: .03em;
+}
+
+.modal2Text {
+  display: none;
+  background-color: #FFFBF7;
+  color: #3a404a;
+  position: absolute;
+  border: 2px solid lightgray;
+  margin-top: 5em;
+  padding: .5em;
+  border-radius: 5px;
+  letter-spacing: .03em;
+}
+
+.modal3Text {
+  display: none;
+  background-color: #FFFBF7;
+  color: #3a404a;
+  position: absolute;
+  border: 2px solid lightgray;
+  margin-top: 5em;
+  padding: .5em;
+  border-radius: 5px;
+  letter-spacing: .03em;
+}
+
+.modal4Text {
+  display: none;
+  background-color: #FFFBF7;
+  color: #3a404a;
+  position: absolute;
+  border: 2px solid lightgray;
+  margin-top: 5em;
+  padding: .5em;
+  border-radius: 5px;
+  letter-spacing: .03em;
+}
+
+#projTitle {
+  letter-spacing: .05em;
+}
+
+.closeButton {
+  margin-top: -.25em;
+  margin-right: 1em;
+  cursor: pointer;
+}
+
+.closeButton:hover {
+  text-decoration: underline;
+}
+
+hr {
+  height: 1px;
+  border: 0;
+  border-top: 5px solid #3a404a;
+  margin-top: 6.35em;
+  width: 75%;
 }
