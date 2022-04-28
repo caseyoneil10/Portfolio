@@ -105,8 +105,7 @@ body {
   color: black;
 }
 
-.pleaseWork {
-}
+
 
 .divButton:hover {
   font-weight: bolder;
@@ -415,4 +414,92 @@ hr {
   border-top: 5px solid #3a404a;
   margin-top: 2.35em;
   width: 75%;
+}
+@media (max-width: 1000px) {
+  #header {
+    display: block;
+    margin-bottom: .5em;
+
+  }
+  #header2 {
+    display: block;
+    margin-bottom: 1em;
+
+     }
+  .welcomeInnerContainer {
+    display: block;
+  }
+  .picture {
+    margin: auto;
+    margin-bottom: 1em;
+    margin-top: -3em;
+  }
+  .projectOutterContainer {
+    text-align: left;
+  }
+  .projectInnerContainer {
+    display: block;
+    text-align: left;
+    margin: 0;
+  }
+  .projects {
+    display: block;
+    text-align: left;
+    letter-spacing: normal;
+  }
+}
+.resumeContainer {
+  margin-top: -.5em;
+}
+.bioContainer {
+  margin-top: -.3em;
+}
+@media (max-width: 700px) {
+  #header {
+    display: block;
+    margin-bottom: .5em;
+
+  }
+  #header2 {
+    display: block;
+    margin-bottom: 1em;
+
+     }
+  .buttonBar {
+    text-align: left;
+    display: block;
+    margin: auto;
+
+  }
+  .divButton {
+    font-size: 1.5em;
+    text-align: left;
+  }
+  .welcomeInnerContainer {
+    display: block;
+  }
+  .picture {
+    display: none;
+    margin: auto;
+    max-height: 200px;
+  }
+  .projectOutterContainer {
+    text-align: left;
+  }
+  .projectInnerContainer {
+    display: block;
+    text-align: left;
+    margin: 0;
+  }
+  .projects {
+    display: block;
+    text-align: left;
+    letter-spacing: normal;
+  }
+}
+.resumeContainer {
+  margin-top: -.5em;
+}
+.bioContainer {
+  margin-top: -.3em;
 }
