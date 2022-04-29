@@ -1,6 +1,6 @@
 body {
-  /* height: 100%;
-  width: 100%; */
+  height: 100%;
+  width: 100%;
   background-color: #FFFBF7;
   font-family: helvetica;
 }
@@ -17,12 +17,15 @@ body {
   letter-spacing: .2em;
 }
 
+#header:hover {
+text-decoration: underline;
+}
+
 #header2 {
   margin: auto;
   text-align: center;
   font-size: 2.5em;
   font-weight: 700;
-  cursor: pointer;
   color: #3a404a;
   text-shadow: 0 0 1px black;
   letter-spacing: .1em;
@@ -33,7 +36,6 @@ body {
   width: 90%;
   justify-content: center;
   margin: auto;
-
 }
 
 .buttonBar {
@@ -47,149 +49,93 @@ body {
   text-align: center;
   font-weight: 100;
   text-shadow: 0 0 1px black;
-
-
 }
-
-
+/* bio button */
 .button1 {
   display: flex;
-
   width: 24%;
   text-align: center;
   flex-direction: column;
-
 }
+/* resume button */
 .button2 {
   display: flex;
   width: 24%;
   flex-direction: column;
-
-
 }
+/* projects button */
 .button3 {
   display: flex;
   width: 24%;
   flex-direction: column;
-
-
 }
+/* links button */
 .button4 {
   display: flex;
   width: 24%;
   flex-direction: column;
 }
-
+/* links inside of drop down menu */
 .ulFlex {
   display: none;
   color: black;
   position: relative;
   margin-top: -.4em;
 }
-
+/* remove stylin from a links */
 .ulFlexLink {
   font-size: .5em;
   text-decoration: none;
   color: black;
 }
-.projButton{
-  display: none;
-  color: black;
-  position: relative;
-  margin-top: -.4em;
-}
-
-.ulFlexLink2 {
-  font-size: .5em;
-  text-decoration: none;
-  color: black;
-}
-
-
-
+/* buttons in menu bar */
 .divButton:hover {
   font-weight: bolder;
 }
 
-#divButton1 {
-  display: inline-block;
-  cursor: pointer;
-  width: 24%;
-}
-
-#divButton2 {
-  display: inline-block;
-  cursor: pointer;
-  width: 24%;
-}
-
-#divButton3 {
-  display: inline-block;
-  cursor: pointer;
-  width: 24%;
-}
-
-#linksButton {
-  display: inline-block;
-  cursor: pointer;
-  width: 24%;
-}
-
-#ulNav {
-  display: block;
-  text-align: right;
-  padding-left: 0;
-  margin-top: -.15em;
-  width: 26.5%;
-  float: right;
-
-}
-
-.links {
-  display: none;
-  list-style: none;
-  text-align: center;
-}
-
-#aLinks {
-  text-decoration: none;
-  color: black;
-}
-
-#header:hover {
-text-decoration: underline;
-}
-
-a:hover {
+/* make drop down menu bolder on hover */
+.ulFlexLink:hover {
   font-weight: bolder;
 }
-
-.hover:hover {
-  text-decoration: underline;
-  cursor: pointer;
+.footerDiv {
+  display: flex;
+  width: 90%;
+  margin:auto;
 }
+.mediaBar {
+  display: flex;
+  width: 10%;
+  margin: auto;
+  justify-content: center;
+}
+
+.icons {
+  padding: .5em;
+  margin: auto;
+  display: flex;
+  width: 80%;
+}
+
+
 
 /* styling for bio page */
 .bioContainer {
   width: 75%;
   margin: auto;
-  margin-top: 5em;
   text-align: left;
   color: #3a404a;
 }
 #careerID {
   margin-bottom: 1em;
-
 }
 #personalID {
   margin-bottom: 1em;
 
 }
 .careerDiv {
-  /* margin-top: -1em; */
   color: #3a404a;
   display: none;
-  text-indent: 2%;
+  text-indent: 1%;
   letter-spacing: .03em;
   border: 2px solid #CFCBC8;
   padding:.5em;
@@ -281,7 +227,7 @@ a:hover {
 /* welcome page styling */
 .welcomePageContainer {
   display: flex;
-  width: 90%;
+  width: 75%;
   margin: auto;
   margin-top: 4em;
   margin-bottom: 10em;
@@ -436,7 +382,22 @@ hr {
   margin-top: 2.35em;
   width: 75%;
 }
-@media (max-width: 1000px) {
+#homeBottom {
+  height: 1px;
+  border: 0;
+  border-top: 5px solid #3a404a;
+  margin-top: -3em;
+  width: 75%;
+}
+#projectsBottom {
+  height: 1px;
+  border: 0;
+  border-top: 5px solid #3a404a;
+  margin-top: 8.35em;
+  width: 75%;
+}
+/* media query for tablet only active less than 1000px */
+@media (max-width: 1050px) {
   #header {
     display: block;
     margin-bottom: .5em;
@@ -455,19 +416,19 @@ hr {
     margin-bottom: 1em;
     margin-top: -3em;
   }
-  .projectOutterContainer {
+  /* .projectOutterContainer {
     text-align: left;
   }
   .projectInnerContainer {
     display: block;
     text-align: left;
     margin: 0;
-  }
-  .projects {
+  } */
+  /* .projects {
     display: block;
     text-align: left;
     letter-spacing: normal;
-  }
+  } */
 }
 .resumeContainer {
   margin-top: -.5em;
@@ -475,7 +436,7 @@ hr {
 .bioContainer {
   margin-top: -.3em;
 }
-@media (max-width: 700px) {
+@media (max-width: 745px) {
   #header {
     display: block;
     margin-bottom: .5em;
@@ -498,19 +459,21 @@ hr {
   }
   .welcomeInnerContainer {
     display: block;
+    margin-bottom: -4em;
   }
   .picture {
-    display: none;
+    display: inline;
     margin: auto;
-    max-height: 200px;
+    max-height: 300px;
+    margin-bottom: 1em;
+    margin-top: -3em;
   }
-  .projectOutterContainer {
-    text-align: left;
-  }
+
   .projectInnerContainer {
     display: block;
-    text-align: left;
-    margin: 0;
+    padding: 1em;
+    margin-left: 2em;
+    margin-bottom: -6em;
   }
   .projects {
     display: block;

@@ -17,7 +17,7 @@ const navigateHeader = () => {
 //The stop function prevents the aninmation from triggering multiple times.
 const animateBio = () => {
   $('.button1').stop().animate({
-    fontSize: "2em"
+    fontSize: "1.8em"
   })
 }
 
@@ -28,7 +28,7 @@ const unanimateBio = () => {
 }
 const animateResume = () => {
   $('.button2').stop().animate({
-    fontSize: "2em"
+    fontSize: "1.8em"
   })
 }
 
@@ -39,7 +39,7 @@ const unanimateResume = () => {
 }
 const animateProjects = () => {
   $('.button3').stop().animate({
-    fontSize: "2em"
+    fontSize: "1.8em"
   })
 }
 
@@ -50,7 +50,7 @@ const unanimateProjects = () => {
 }
 const animateLinks = () => {
   $('.button4').stop().animate({
-    fontSize: "2em"
+    fontSize: "1.8em"
   })
 }
 
@@ -61,12 +61,8 @@ const unanimateLinks = () => {
 }
 //this toggles the display setting for class of links. each click toggles it from block to none. This is used for the drop down menu in the header.
 const expandLinks = () => {
-  $('.ulFlex').slideToggle()
+  $('.ulFlex').slideToggle(300, 'linear')
 }
-const expandLinks2 = () => {
-  $('.projButton').slideToggle()
-}
-
 //These links toggle between showing the
 const expandCareer = () => {
   $('.careerDiv').slideToggle('fast')
@@ -127,30 +123,30 @@ $(() => {
   $('.button2').click(navigateResume);
   $('.button3').click(navigateProjects);
   $('#header').click(navigateHeader)
-
+//expand links in drop down menu found in header
   $('.button4').click(expandLinks)
-  $('.button3').click(expandLinks2)
 
   //upon mouse enter into the object execute the function.
+  //these specific functions animate the button menu
   $('.button1').mouseenter(animateBio)
   //upon mouse leave from the object execute the function.
   $('.button1').mouseleave(unanimateBio)
-
+  //these specific functions animate the button menu
   $('.button2').mouseenter(animateResume)
   $('.button2').mouseleave(unanimateResume)
-
   $('.button3').mouseenter(animateProjects)
   $('.button3').mouseleave(unanimateProjects)
-
   $('.button4').mouseenter(animateLinks)
   $('.button4').mouseleave(unanimateLinks)
-
+//expand the bio section with the text contained within each "section" (click career will expand the inside text)
   $('#careerID').click(expandCareer)
   $('#personalID').click(expandPersonal)
   $('#additionalID').click(expandAdditional)
+//same as the above functions but on the resume page
   $('#skillsID').click(expandSkills)
   $('#workID').click(expandWork)
   $('#educationID').click(expandEducation)
+
   $('.proj1').click(showModal1)
   $('.closeButton').click(hideModal1)
   $('.proj2').click(showModal2)
