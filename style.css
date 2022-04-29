@@ -6,6 +6,7 @@ body {
 }
 
 /* header styling same on each page */
+/* styling for the name at top h1 */
 #header {
   margin: auto;
   text-align: center;
@@ -16,11 +17,10 @@ body {
   text-shadow: 0 0 1px black;
   letter-spacing: .2em;
 }
-
 #header:hover {
 text-decoration: underline;
 }
-
+/* h3 styling in header */
 #header2 {
   margin: auto;
   text-align: center;
@@ -30,14 +30,14 @@ text-decoration: underline;
   text-shadow: 0 0 1px black;
   letter-spacing: .1em;
 }
-
+/* top level div flex for button menu */
 .buttonContainer {
   display: flex;
   width: 90%;
   justify-content: center;
   margin: auto;
 }
-
+/* inner container for div flex menu bar */
 .buttonBar {
   display: flex;
   width: 85%;
@@ -97,18 +97,20 @@ text-decoration: underline;
 .ulFlexLink:hover {
   font-weight: bolder;
 }
+/* outter div flex for social links */
 .footerDiv {
   display: flex;
   width: 90%;
   margin:auto;
 }
+/* inner div flex for social links */
 .mediaBar {
   display: flex;
   width: 10%;
   margin: auto;
   justify-content: center;
 }
-
+/* icons inside the flex elements in the footer */
 .icons {
   padding: .5em;
   margin: auto;
@@ -163,6 +165,10 @@ text-decoration: underline;
   border-radius: 4px;
   font-size: 1.1em;
 }
+/* adds an underline to elements on bio, resume, and projects page */
+.hover:hover {
+  text-decoration: underline;
+}
 
 /* styling for resume page */
 .skillsContainer {
@@ -190,13 +196,13 @@ text-decoration: underline;
   letter-spacing: .05em;
 
 }
-
+/* these are how wide each h2 is in the resume page. the normal widths were too wide and causing the hover property to trigger when not actually being over the text. */
 #skillsID {
   width: 5%;
 }
 
 #workID {
-  width: 24%;
+  width: 20%;
 }
 
 #educationID {
@@ -230,7 +236,7 @@ text-decoration: underline;
   width: 75%;
   margin: auto;
   margin-top: 4em;
-  margin-bottom: 10em;
+  margin-bottom: 7em;
   justify-content: center;
 }
 
@@ -270,6 +276,7 @@ text-decoration: underline;
   display: flex;
   margin-right: 1em;
   border-radius: 8px;
+  /* prevent image from getting too big */
   max-width: 15em;
   height: auto;
 }
@@ -300,19 +307,21 @@ text-decoration: underline;
   width: 65%;
   margin-top: 10em;
 }
-
+/* this the gray div that covers the whole page when the modal pops up */
 .modal1 {
   display: none;
   background-color: rgba(1, 1, 1, 0.5);
   position: fixed;
   top: 0;
   left: 0;
+  /* covers whole page */
   height: 100%;
   width: 100%;
+  /* puts the modal infront of all other elements on the page */
   z-index: 1;
   overflow: auto;
 }
-
+/* the actual text box of the modal */
 .modal1Text {
   display: none;
   background-color: #FFFBF7;
@@ -375,6 +384,7 @@ text-decoration: underline;
   text-decoration: underline;
 }
 
+
 hr {
   height: 1px;
   border: 0;
@@ -396,8 +406,8 @@ hr {
   margin-top: 8.35em;
   width: 75%;
 }
-/* media query for tablet only active less than 1000px */
-@media (max-width: 1050px) {
+/* media query for tablet only active less than 1100px */
+@media (max-width: 1100px) {
   #header {
     display: block;
     margin-bottom: .5em;
@@ -416,27 +426,15 @@ hr {
     margin-bottom: 1em;
     margin-top: -3em;
   }
-  /* .projectOutterContainer {
-    text-align: left;
-  }
-  .projectInnerContainer {
-    display: block;
-    text-align: left;
-    margin: 0;
-  } */
-  /* .projects {
-    display: block;
-    text-align: left;
-    letter-spacing: normal;
-  } */
-}
 .resumeContainer {
   margin-top: -.5em;
 }
 .bioContainer {
   margin-top: -.3em;
 }
-@media (max-width: 745px) {
+
+/* media query for phone only active less than 500px */
+@media (max-width: 500px) {
   #header {
     display: block;
     margin-bottom: .5em;
@@ -486,4 +484,7 @@ hr {
 }
 .bioContainer {
   margin-top: -.3em;
+}
+.mediaBar {
+  width: 90%;
 }
