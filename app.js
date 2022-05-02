@@ -1,4 +1,6 @@
 //functions that execute when each respective button is clicked and redirect to a different html file
+//while I could have just used a tags I was finding that to use an a tag my formating was getting destroyed. Still not completey sure why that is but I found this method allowed me to perserve my formatting and got me extra practice with click functions.
+
 const navigateBio = () => {
   window.location.href = ('../html/bio.html')
 }
@@ -15,6 +17,10 @@ const navigateHeader = () => {
 
 //These animate our buttons in the header
 //The stop function prevents the aninmation from triggering multiple times.
+
+//https://css-tricks.com/full-jquery-animations/
+//This website has some great tips on stopping the animation from repeating too many times if the user mouses over multiple times very quickly. There were some much more advanced methods shown from the website I wasn't comfortable with implementing so I found a simpler method.
+
 const animateBio = () => {
   $('.button1').stop().animate({
     fontSize: "1.8em"
@@ -63,7 +69,7 @@ const unanimateLinks = () => {
 const expandLinks = () => {
   $('.ulFlex').slideToggle(300, 'linear')
 }
-//These links toggle between showing the
+//These links toggle between showing the div and hiding. I felt it gave the page a cleaner look having them hidden by default.
 const expandCareer = () => {
   $('.careerDiv').slideToggle('fast')
 }
@@ -82,6 +88,8 @@ const expandWork = () => {
 const expandEducation = () => {
   $('.educationDiv').slideToggle('fast')
 }
+
+//these are the jquery methods to show the project modals.
 const showModal1 = () => {
   $('.modal1').css('display', 'flex')
   $('.modal1Text').css('display', 'block')
@@ -146,8 +154,9 @@ $(() => {
   $('#skillsID').click(expandSkills)
   $('#workID').click(expandWork)
   $('#educationID').click(expandEducation)
-
+//these will show the project modals on click.
   $('.proj1').click(showModal1)
+  //this is a close button withing the div modal.
   $('.closeButton').click(hideModal1)
   $('.proj2').click(showModal2)
   $('.closeButton').click(hideModal2)

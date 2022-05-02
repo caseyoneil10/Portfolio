@@ -418,6 +418,9 @@ hr {
     margin-bottom: 1em;
 
      }
+     .buttonBar {
+       font-size: 2em;
+     }
   .welcomeInnerContainer {
     display: block;
   }
@@ -433,8 +436,8 @@ hr {
   margin-top: -.3em;
 }
 
-/* media query for phone only active less than 500px */
-@media (max-width: 500px) {
+/* media query for phone only active less than 625px */
+@media (max-width: 625px) {
   #header {
     display: block;
     margin-bottom: .5em;
