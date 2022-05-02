@@ -2,11 +2,20 @@
 
 
 ## Approach Taken
-For this project, I started by getting all of my pages made and then set them up so they were "linked" together. This way I had the general flow of the website. I waited for any type of formatting until I was happy with the actual functionality of the page.  
+The first thing I did when brainstorming for this project was by creating a wireframe, or I should say several wireframes. One for each page that will be part of my portfolio.   
+
+By writing it down it gave me the general idea of where I was headed.   
 
 
+After this I started by getting all of my pages made and then set them up so they were "linked" together. This way I had the general flow of the website. I waited for any type of formatting until I was happy with the actual functionality of the page.   
 
-I did find that some formatting, for instance Flexbox implementation was better to do while I was working on the functionality. For example my main button bar in the header, I started by just getting the jquery methods working (the animate method and the drop drop down menu), although I found when I wanted to go back and make them Flexbox elements I had to redo some things that may have been easier, or more efficient to tackle while I was initially setting it up.  
+Once pages were made, I added filler text to ensure that my new jquery functions were working as intended.  
+
+I did find that some formatting, for instance Flexbox implementation was better to do while I was working on the functionality. For example my main button bar in the header, I started by just getting the jquery methods working (the animate method and the drop drop down menu), although I found when I wanted to go back and make them Flexbox elements I had to redo some things that may have been easier, or more efficient to tackle while I was initially setting it up.    
+
+Once I felt I was in a good place with all the functionality I began to add more and more styling. It was my goal to create a very minimal design without any unnecessary distraction.   
+
+I found it was very helpful to add comments, especially to my CSS file, so that I didn't lose my place with all of the different pages.
 
 
 
