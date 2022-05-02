@@ -17,9 +17,11 @@ body {
   text-shadow: 0 0 1px black;
   letter-spacing: .2em;
 }
+
 #header:hover {
-text-decoration: underline;
+  text-decoration: underline;
 }
+
 /* h3 styling in header */
 #header2 {
   margin: auto;
@@ -30,6 +32,7 @@ text-decoration: underline;
   text-shadow: 0 0 1px black;
   letter-spacing: .1em;
 }
+
 /* top level div flex for button menu */
 .buttonContainer {
   display: flex;
@@ -37,6 +40,7 @@ text-decoration: underline;
   justify-content: center;
   margin: auto;
 }
+
 /* inner container for div flex menu bar */
 .buttonBar {
   display: flex;
@@ -50,6 +54,7 @@ text-decoration: underline;
   font-weight: 100;
   text-shadow: 0 0 1px black;
 }
+
 /* bio button */
 .button1 {
   display: flex;
@@ -57,24 +62,28 @@ text-decoration: underline;
   text-align: center;
   flex-direction: column;
 }
+
 /* resume button */
 .button2 {
   display: flex;
   width: 24%;
   flex-direction: column;
 }
+
 /* projects button */
 .button3 {
   display: flex;
   width: 24%;
   flex-direction: column;
 }
+
 /* links button */
 .button4 {
   display: flex;
   width: 24%;
   flex-direction: column;
 }
+
 /* links inside of drop down menu */
 .ulFlex {
   display: none;
@@ -82,12 +91,14 @@ text-decoration: underline;
   position: relative;
   margin-top: -.4em;
 }
+
 /* remove stylin from a links */
 .ulFlexLink {
   font-size: .5em;
   text-decoration: none;
   color: black;
 }
+
 /* buttons in menu bar */
 .divButton:hover {
   font-weight: bolder;
@@ -97,12 +108,14 @@ text-decoration: underline;
 .ulFlexLink:hover {
   font-weight: bolder;
 }
+
 /* outter div flex for social links */
 .footerDiv {
   display: flex;
   width: 90%;
-  margin:auto;
+  margin: auto;
 }
+
 /* inner div flex for social links */
 .mediaBar {
   display: flex;
@@ -110,6 +123,7 @@ text-decoration: underline;
   margin: auto;
   justify-content: center;
 }
+
 /* icons inside the flex elements in the footer */
 .icons {
   padding: .5em;
@@ -118,8 +132,6 @@ text-decoration: underline;
   width: 80%;
 }
 
-
-
 /* styling for bio page */
 .bioContainer {
   width: 75%;
@@ -127,20 +139,22 @@ text-decoration: underline;
   text-align: left;
   color: #3a404a;
 }
+
 #careerID {
   margin-bottom: 1em;
 }
+
 #personalID {
   margin-bottom: 1em;
-
 }
+
 .careerDiv {
   color: #3a404a;
   display: none;
   text-indent: 1%;
   letter-spacing: .03em;
   border: 2px solid #CFCBC8;
-  padding:.5em;
+  padding: .5em;
   border-radius: 4px;
   font-size: 1.1em;
 }
@@ -151,9 +165,10 @@ text-decoration: underline;
   text-indent: 2%;
   letter-spacing: .03em;
   border: 2px solid #CFCBC8;
-  padding:.5em;
+  padding: .5em;
   border-radius: 4px;
-  font-size: 1.1em;}
+  font-size: 1.1em;
+}
 
 .additionalDiv {
   color: #3a404a;
@@ -161,10 +176,11 @@ text-decoration: underline;
   text-indent: 2%;
   letter-spacing: .03em;
   border: 2px solid #CFCBC8;
-  padding:.5em;
+  padding: .5em;
   border-radius: 4px;
   font-size: 1.1em;
 }
+
 /* adds an underline to elements on bio, resume, and projects page */
 .hover:hover {
   text-decoration: underline;
@@ -188,14 +204,13 @@ text-decoration: underline;
 .workExpDiv {
   display: none;
   letter-spacing: .05em;
-
 }
 
 .educationDiv {
   display: none;
   letter-spacing: .05em;
-
 }
+
 /* these are how wide each h2 is in the resume page. the normal widths were too wide and causing the hover property to trigger when not actually being over the text. */
 #skillsID {
   width: 5%;
@@ -307,6 +322,7 @@ text-decoration: underline;
   width: 65%;
   margin-top: 10em;
 }
+
 /* this the gray div that covers the whole page when the modal pops up */
 .modal1 {
   display: none;
@@ -321,6 +337,7 @@ text-decoration: underline;
   z-index: 1;
   overflow: auto;
 }
+
 /* the actual text box of the modal */
 .modal1Text {
   display: none;
@@ -370,10 +387,12 @@ text-decoration: underline;
   letter-spacing: .03em;
 }
 
+/* simple formating for the actual "title" of the projects in the modal. */
 #projTitle {
   letter-spacing: .05em;
 }
 
+/* close button formating inside modal */
 .closeButton {
   margin-top: -.25em;
   margin-right: 1em;
@@ -384,7 +403,7 @@ text-decoration: underline;
   text-decoration: underline;
 }
 
-
+/* horizontal line formating on all pages */
 hr {
   height: 1px;
   border: 0;
@@ -392,6 +411,8 @@ hr {
   margin-top: 2.35em;
   width: 75%;
 }
+
+/* horizontal line formating on home page */
 #homeBottom {
   height: 1px;
   border: 0;
@@ -399,6 +420,7 @@ hr {
   margin-top: -3em;
   width: 75%;
 }
+
 #projectsBottom {
   height: 1px;
   border: 0;
@@ -406,88 +428,102 @@ hr {
   margin-top: 8.35em;
   width: 75%;
 }
+
 /* media query for tablet only active less than 1100px */
 @media (max-width: 1100px) {
   #header {
     display: block;
     margin-bottom: .5em;
-
   }
+
   #header2 {
     display: block;
     margin-bottom: 1em;
-
-     }
-     .buttonBar {
-       font-size: 2em;
-     }
-  .welcomeInnerContainer {
-    display: block;
   }
-  .picture {
-    margin: auto;
-    margin-bottom: 1em;
-    margin-top: -3em;
-  }
-.resumeContainer {
-  margin-top: -.5em;
-}
-.bioContainer {
-  margin-top: -.3em;
-}
 
-/* media query for phone only active less than 625px */
-@media (max-width: 625px) {
-  #header {
-    display: block;
-    margin-bottom: .5em;
-
-  }
-  #header2 {
-    display: block;
-    margin-bottom: 1em;
-
-     }
   .buttonBar {
-    text-align: left;
-    display: block;
-    margin: auto;
+    font-size: 2em;
+  }
 
-  }
-  .divButton {
-    font-size: 1.5em;
-    text-align: left;
-  }
   .welcomeInnerContainer {
     display: block;
-    margin-bottom: -4em;
   }
+
   .picture {
-    display: inline;
     margin: auto;
-    max-height: 300px;
     margin-bottom: 1em;
     margin-top: -3em;
   }
 
-  .projectInnerContainer {
-    display: block;
-    padding: 1em;
-    margin-left: 2em;
-    margin-bottom: -6em;
+  .resumeContainer {
+    margin-top: -.5em;
   }
-  .projects {
-    display: block;
-    text-align: left;
-    letter-spacing: normal;
+
+  .bioContainer {
+    margin-top: -.3em;
   }
-}
-.resumeContainer {
-  margin-top: -.5em;
-}
-.bioContainer {
-  margin-top: -.3em;
-}
-.mediaBar {
-  width: 90%;
-}
+
+  /* media query for phone only active less than 625px */
+  @media (max-width: 625px) {
+    #header {
+      display: block;
+      margin-bottom: .5em;
+    }
+
+    #header2 {
+      display: block;
+      margin-bottom: 1em;
+    }
+
+    .buttonBar {
+      text-align: left;
+      display: block;
+      margin: auto;
+    }
+
+    .divButton {
+      font-size: 1.5em;
+      text-align: left;
+    }
+
+    .welcomeInnerContainer {
+      display: block;
+      margin-bottom: -4em;
+    }
+
+    .picture {
+      display: inline;
+      margin: auto;
+      max-height: 300px;
+      margin-bottom: 1em;
+      margin-top: -3em;
+    }
+
+    .projectInnerContainer {
+      display: block;
+      padding: 1em;
+      margin-left: 2em;
+      margin-bottom: -6em;
+    }
+
+    .projects {
+      display: block;
+      text-align: left;
+      letter-spacing: normal;
+    }
+
+    .resumeContainer {
+    margin-top: -.5em;
+    }
+
+    .bioContainer {
+    margin-top: -.3em;
+    }
+
+    .mediaBar {
+    width: 90%;
+    }
+
+    #homeBottom {
+      margin-top: .5em;
+    }
