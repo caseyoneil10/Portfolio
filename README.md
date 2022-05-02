@@ -2,7 +2,7 @@
 
 
 ## Approach Taken
-The first thing I did when brainstorming for this project was by creating a wireframe, or I should say several wireframes. One for each page that will be part of my portfolio.   
+The first thing I did when brainstorming for this project was to create a wireframe, or I should say several wireframes. One for each page that will be part of my portfolio.   
 
 By writing it down it gave me the general idea of where I was headed.   
 

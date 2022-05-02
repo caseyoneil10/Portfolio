@@ -345,7 +345,7 @@ body {
   color: #3a404a;
   position: absolute;
   border: 2px solid lightgray;
-  margin-top: 5em;
+  margin-top: 6.7em;
   padding: .5em;
   border-radius: 5px;
   letter-spacing: .03em;
@@ -357,7 +357,7 @@ body {
   color: #3a404a;
   position: absolute;
   border: 2px solid lightgray;
-  margin-top: 5em;
+  margin-top: 6.7em;
   padding: .5em;
   border-radius: 5px;
   letter-spacing: .03em;
@@ -369,7 +369,7 @@ body {
   color: #3a404a;
   position: absolute;
   border: 2px solid lightgray;
-  margin-top: 5em;
+  margin-top: 6.7em;
   padding: .5em;
   border-radius: 5px;
   letter-spacing: .03em;
@@ -381,7 +381,7 @@ body {
   color: #3a404a;
   position: absolute;
   border: 2px solid lightgray;
-  margin-top: 5em;
+  margin-top: 6.7em;
   padding: .5em;
   border-radius: 5px;
   letter-spacing: .03em;
@@ -526,4 +526,16 @@ hr {
 
     #homeBottom {
       margin-top: .5em;
+    }
+    .modal1Text {
+      margin-top: 5em;
+    }
+    .modal2Text {
+      margin-top: 5em;
+    }
+    .modal3Text {
+      margin-top: 5em;
+    }
+    .modal4Text {
+      margin-top: 5em;
     }
